@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="game-section">
+        <div class="game-cells cell-top cell-left" id="0"></div>
+        <div class="game-cells cell-top" id="1"></div>
+        <div class="game-cells cell-top cell-right" id="2"></div>
+
+        <div class="game-cells cell-left" id="3"></div>
+        <div class="game-cells" id="4"></div>
+        <div class="game-cells cell-right" id="5"></div>
+
+        <div class="game-cells cell-bottom cell-left" id="6"></div>
+        <div class="game-cells cell-bottom" id="7"></div>
+        <div class="game-cells cell-bottom cell-right" id="8"></div>
+      </section>
+
+      <section class="endgame-section">
+        <p class="endgame-message">Game Over!</p>
+        <div class="endgame-icon"></div>
+        <button class="endgame-button" onclick="startGame()">
+          Restart Game
+        </button>
+      </section>
+    </div>
+
+    <!-- Link JS -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
