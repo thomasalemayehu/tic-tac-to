@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
 }
-
 .main-container {
   width: 100%;
   height: 100vh;
@@ -12,28 +10,42 @@
   align-items: center;
   justify-content: center;
 }
-.game-section,
-.endgame-section {
+.main-game-section {
+  width: 500px;
+  height: 600px;
+  padding: 2% 0 1% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.endgame-message {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.game-board {
   width: 420px;
   height: 396px;
-}
-.game-section {
   display: flex;
   flex-wrap: wrap;
+}
+.endgame-button {
+  padding: 0.5em 1.2em;
 }
 .game-cells {
   width: 140px;
   height: 132px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 3rem;
 
   border: 1px solid black;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
 }
-.cell-top {
-  border-top: 0;
+
+.cell-left {
+  border-left: 0;
 }
 .cell-right {
   border-right: 0;
@@ -41,34 +53,17 @@
 .cell-bottom {
   border-bottom: 0;
 }
-.cell-left {
-  border-left: 0;
+.cell-top {
+  border-top: 0;
 }
-.endgame-section {
+
+.restart-button {
   position: absolute;
-  /* background-color: aqua; */
-  z-index: 100;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background-color: teal;
+  top: 4%;
+  right: 40%;
+  width: 30px;
 }
-.endgame-message {
-  text-align: center;
+
+.restart-button p {
   text-transform: capitalize;
-  font-size: 2rem;
-  letter-spacing: 2px;
-}
-
-.endgame-icon {
-  width: 60%;
-  height: 60%;
-  background-color: yellow;
-}
-
-.endgame-button {
-  padding: 0.5em 1em;
 }
